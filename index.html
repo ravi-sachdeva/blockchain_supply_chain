@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title></title>
+      <link rel="stylesheet" type="text/css" href="indexstyle.css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <script src="https://s3.amazonaws.com/myadvobuck/static/libs/typed.min.js"></script>
+
+      <style type="text/css">
+      	#logoid{
+      		width:15%;
+      		margin:3%;
+      	}
+      </style>
+
+   </head>
+   <body>
+      <header class="site-header clearfix">
+         <nav>
+            <div class="logo">
+               <img src="logo.png" id="logoid">
+            </div>
+            <div class="menu">
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="signlog.php">Login/Sign-up</a></li>
+                  <li><a href="aboutpage.html">About Us</a></li>
+                  <li><a href="help.html">Contact Us</a></li>
+               </ul>
+            </div>
+         </nav>
+         <section>
+            <div class="leftside"> 
+               <img src="intro.png">
+            </div>
+            <div class="rightside">
+               <h1>Smart Chain</h1>
+               <div  id="typed-strings">
+                  <p>Build on Trust</p>
+                  <p>Build on Blockchain</p>
+               </div>
+               <span id="typed"></span>
+               <br>
+               <br>
+               <br>
+               <button>Get started</button>
+            </div>
+         </section>
+      </header>
+      <script>
+         var type= new Typed('#typed',{
+            stringsElement:'#typed-strings',
+            typeSpeed:100,
+            startDelay:200,
+            backSpeed:70,
+            backDelay:100,
+            loop:true,
+            showCursor:false,
+            cursorChar:"|",
+            // after:null
+         
+         });
+      </script>
+   </body>
+</html>
